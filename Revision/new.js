@@ -5,7 +5,8 @@
 //         console.log("I know how to do this");
 //         console.log(x);
 function solve() {
-    let age=25;
+    var age=25;
     console.log(age);
 }
+console.log(age);
 solve();
