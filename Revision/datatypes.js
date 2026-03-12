@@ -1,2 +1,2 @@
-let num=1;
-console.log(instanceof num);
+let marks;
+console.log(marks);
