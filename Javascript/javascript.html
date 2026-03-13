@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript file</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Javascript file</title>
 </head>
-<body>
-    <h2>Hello Javascript</h2>
-    <script>
-        let name = "John";
-        let age = 45;
-        let student =2025;
-        let phone=9849812345;
-        console.log("My name is " + name );
-        console.log("I am " + age + " years old.");
-        console.log("Year: " + student);
-        console.log("My phone number is " + phone);
-    // alert("Javascript is running!");
-    // console.log("Hello Students");
 
-    </script>
+<body>
+
+<h2>Hello Javascript</h2>
+
+<script>
+
+let name = "John";
+let age = 45;
+let student = 2025;
+let phone = 9849812345;
+
+console.log("My name is " + name);
+console.log("I am " + age + " years old.");
+console.log("Year: " + student);
+console.log("My phone number is " + phone);
+
+// Normal function
+function add(a,b){
+    return a + b;
+}
+
+// Arrow function
+const addNumbers = (a,b) => {
+    console.log(add(a,b));
+}
+
+addNumbers(5,3);
+
+//Using map function to square numbers in an array
+let numbers=[1,2,3,4];
+let square = numbers.map(num =>num * num);
+console.log(square);
+
+//Using filter function to satisfy a condition
+let numbersz=[10,15,20,25];
+let result = numbersz.filter(num => num > 15);
+console.log(result);
+
+//Using reduce function to reduce an array to a single value
+let numberss=[10,20,30];
+let sum = numberss.reduce((total,num)=>total + num,0);
+console.log(sum);
+</script>
+
 </body>
 </html>
