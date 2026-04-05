@@ -13,3 +13,5 @@ console.log(++b);
 s=5;
 t=6;
 console.log(s,t,a);
+
+console.log("nitin","is","coding");
