@@ -8,4 +8,4 @@ console.log(a);
 b=4;
 console.log(b);
 b++;
-console.log(b);
+console.log(++b);
