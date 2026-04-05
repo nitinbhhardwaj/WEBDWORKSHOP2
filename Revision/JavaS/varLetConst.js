@@ -1,4 +1,4 @@
-const a="rahul";
+const a=4;
 console.log(a);
-a="kumar";
+a=6;
 console.log(a);
