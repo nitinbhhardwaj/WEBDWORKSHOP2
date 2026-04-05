@@ -9,3 +9,7 @@ b=4;
 console.log(b);
 b++;
 console.log(++b);
+
+s=5;
+t=6;
+console.log(s,t,a);
