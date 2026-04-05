@@ -15,3 +15,6 @@ t=6;
 console.log(s,t,a);
 
 console.log("nitin","is","coding");
+
+age=20;
+console.log("My age is "+age+"I am a student");
