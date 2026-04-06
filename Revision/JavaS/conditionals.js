@@ -28,4 +28,5 @@ else console.log("Not a three digit number");
 a=5;
 b='5';
 console.log(a===b);
+console.log(a==b);
 //this triple equal operator checks the num as well as the data type of the variable.
