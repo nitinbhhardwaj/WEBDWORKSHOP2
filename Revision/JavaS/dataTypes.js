@@ -12,3 +12,9 @@ console.log(e,typeof (e));
 console.log(f,typeof (f));
 
 
+
+
+
+
+
+
