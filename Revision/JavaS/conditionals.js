@@ -22,3 +22,10 @@
 num=899.1;
 if(num>=100 && num<=999) console.log("Three digit number");
 else console.log("Not a three digit number");
+
+
+/*Triple equal operators*/
+a=5;
+b='5';
+console.log(a===b);
+//this triple equal operator checks the num as well as the data type of the variable.
