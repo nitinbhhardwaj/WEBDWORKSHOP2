@@ -7,8 +7,12 @@ arr=[1,2,4,5,6];
 //     console.log(arr[i]);
 // }
 
-let n=arr.length;
-console.log(n);
-console.log(arr[3]);
+//console.log(arr[3]);
 
+arr.push(9);
+console.log(arr);
+arr.pop(); //remove the last element of the array
+console.log(arr);
+arr.unshift(23);
+console.log(arr);
 //C++ : Vectors, Java : ArrayList 
