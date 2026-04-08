@@ -15,12 +15,17 @@ Languages & Core Web:
 
 🔗 Connect with me
 LinkedIn: https://www.linkedin.com/in/nitin-bhardwaj-8bb880395/
+
 🚀 Deployed Project Links
+
 Amazon Page
 🔗 https://nitinbhhardwaj.github.io/Amazon/
-My Portfolio
+
+My Portfoli0
 🔗 https://nitinbhhardwaj.github.io/MyPortfolio/
+
 Netflix Page
 🔗 https://nitinbhhardwaj.github.io/Netflix-Clone/
+
 Nitex Portfolio
 🔗 https://nitinbhhardwaj.github.io/Nitex/
