@@ -10,3 +10,4 @@ console.log(arr);
 
 console.log(typeof (array));
 console.log(typeof (arr));
+
