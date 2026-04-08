@@ -1,4 +1,4 @@
-let array=[2,3,4,5,6];
+let array=[2,"rahyl",7.9,true,6];
 array[0]=1;
 console.log(array);
 array=5;
