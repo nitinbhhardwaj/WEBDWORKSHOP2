@@ -1,0 +1,15 @@
+
+    body {
+      text-align: center;
+      margin-top: 50px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+    #output {
+      margin-top: 20px;
+      font-size: 20px;
+      white-space: pre;
+      font-family: aerial;
+    }
