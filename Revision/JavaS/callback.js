@@ -5,4 +5,4 @@ function fun(x,y){
     let z=x(2,3,4);
     return (z-y);
 }
-console.log(product,5);
+console.log(fun(product,5));
