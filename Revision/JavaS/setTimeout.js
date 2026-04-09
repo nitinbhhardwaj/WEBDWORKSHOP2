@@ -1,10 +1,11 @@
 //Print 1 to 19 but with a delay of 1 second between each other
 
 
- for(let i=30;i>=1;i--){
+ for(let i=1;i<=10;i++){
     setTimeout(function(){
-        console.log(i);
-    },1000*i);
+        // console.log(31-i);
+        console.log(Math.random())
+    },500*i);
  }
 
 
