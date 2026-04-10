@@ -1,4 +1,6 @@
 console.log("Hello, World!");
 console.log("Welcome to the Javascript programming");
-names=" ";
-console.log(typeof names);
+x=null;
+y=undefined;
+console.log(typeof x);
+console.log(typeof y);
