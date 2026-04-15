@@ -1,96 +1,37 @@
-let employees = [];
-
+let employees=[];
 function addEmployee(){
-
-    let name = prompt("Enter Employee Name");
-    let id = prompt("Enter Employee ID");
-    let salary = parseFloat(prompt("Enter Salary"));
-    let department = prompt("Enter Department");
-
-    let emp = {
-        name:name,
-        id:id,
-        salary:salary,
-        department:department
-    };
-
-    employees.push(emp);
-
-    alert("Employee Added Successfully!");
+let name=prompt("Enter Name"),id=prompt("Enter ID"),
+salary=parseFloat(prompt("Enter Salary")),dept=prompt("Enter Department");
+if(!name||!id||isNaN(salary)||!dept){alert("Invalid input");return;}
+employees.push({name,id,salary,department:dept});
+alert("Employee Added");
 }
-
 function displayEmployees(){
-
-    let text = "";
-
-    for(let i=0;i<employees.length;i++){
-
-        text += "Name: " + employees[i].name +
-        " | ID: " + employees[i].id +
-        " | Salary: " + employees[i].salary +
-        " | Department: " + employees[i].department +
-        "<br>";
-    }
-
-    document.getElementById("output").innerHTML = text;
+let text="";
+for(let e of employees)
+text+=`Name:${e.name} | ID:${e.id} | Salary:${e.salary} | Dept:${e.department}<br>`;
+document.getElementById("output").innerHTML=text||"No Data";
 }
-
 function salaryAbove(){
-
-    let text = "Employees with Salary > 50000<br>";
-
-    for(let i=0;i<employees.length;i++){
-
-        if(employees[i].salary > 50000){
-            text += employees[i].name + " - " + employees[i].salary + "<br>";
-        }
-
-    }
-
-    document.getElementById("output").innerHTML = text;
+let text="Employees with Salary > 50000<br>";
+for(let e of employees) if(e.salary>50000) text+=`${e.name} - ${e.salary}<br>`;
+document.getElementById("output").innerHTML=text;
 }
-
 function totalSalary(){
-
-    let total = 0;
-
-    for(let i=0;i<employees.length;i++){
-        total += employees[i].salary;
-    }
-
-    document.getElementById("output").innerHTML =
-    "Total Salary: " + total;
+let total=0;
+for(let e of employees) total+=e.salary;
+document.getElementById("output").innerHTML="Total Salary: "+total;
 }
-
 function averageSalary(){
-
-    let total = 0;
-
-    for(let i=0;i<employees.length;i++){
-        total += employees[i].salary;
-    }
-
-    let avg = total / employees.length;
-
-    document.getElementById("output").innerHTML =
-    "Average Salary: " + avg;
+if(!employees.length)return document.getElementById("output").innerHTML="No Data";
+let total=0;
+for(let e of employees) total+=e.salary;
+document.getElementById("output").innerHTML="Average Salary: "+(total/employees.length).toFixed(2);
 }
-
 function countDepartment(){
-
-    let dept = prompt("Enter Department Name");
-
-    let count = 0;
-
-    for(let i=0;i<employees.length;i++){
-
-        if(employees[i].department.toLowerCase() == dept.toLowerCase()){
-            count++;
-        }
-
-    }
-
-    document.getElementById("output").innerHTML =
-    "Employees in " + dept + " department: " + count;
+let dept=prompt("Enter Department");if(!dept)return;
+let count=0;
+for(let e of employees)
+if(e.department.toLowerCase()==dept.toLowerCase())count++;
+document.getElementById("output").innerHTML=`Employees in ${dept}: ${count}`;
 }
-
