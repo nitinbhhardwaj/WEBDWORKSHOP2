@@ -20,4 +20,22 @@ fullName="Mayank";
 console.log(fullname);
 console.log(fullName);
 //Space and first num is not allowed in variable name (letter,digit,_,$)
+//full_name,fullName,full-name,FullName(snakecase,camel,kebab,pascal)
+let names="Tony Stark";
+console.log(names);
+//var give global scope and it is avoided after ES6(2015)
+let a=10;
+a=20;
+a=30;
+console.log(a);
+let b;
+console.log(b);
+const c='*';
+console.log(typeof c);
+let z=BigInt("345");
+console.log(typeof z);
+let i=Symbol("{");
+console.log(typeof i);
+
+
 
