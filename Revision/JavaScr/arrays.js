@@ -14,3 +14,8 @@ console.log(x);
 x.pop();
 console.log(x);
 
+x.shift();
+console.log(x);
+
+x.unshift(3);
+console.log(x);
