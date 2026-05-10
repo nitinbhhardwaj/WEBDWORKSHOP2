@@ -7,6 +7,6 @@
 // OnetoN(20);
 
 function sum(a,b){
-    console.log(a+b);
+    console.log((a*a)+(b*b));
 }
 sum(2,3);
