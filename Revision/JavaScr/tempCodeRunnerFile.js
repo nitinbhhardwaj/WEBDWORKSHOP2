@@ -1,3 +1,1 @@
-for(const ele of b){
-    console.log(iterator);
-}
+if (Object.hasOwnProperty.call(student, key))
