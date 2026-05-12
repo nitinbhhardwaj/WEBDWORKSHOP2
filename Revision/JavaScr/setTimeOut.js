@@ -10,10 +10,16 @@
 //     console.log(i);
 // }},2000);
 
+// for(let i=1;i<=10;i++){
+//     setTimeout(function(){
+//         console.log(i);
+//     },i*300);
+//}
+
 for(let i=1;i<=10;i++){
     setTimeout(function(){
-        console.log(i);
-    },i*300);
+        console.log(Math.random())
+    },i*200);
 }
 
 
