@@ -29,9 +29,9 @@ y.addEventListener("mouseleave",function(){
 })
 let z=document.getElementById("box3");
 z.addEventListener("mousemove",function(){
-    let r=Math.floor(Math.random()*256);
-    let g=Math.floor(Math.random()*256);
-    let b=Math.floor(Math.random()*256);
+    let r=(Math.random()*256);
+    let g=(Math.random()*256);
+    let b=(Math.random()*256);
     z.style.backgroundColor=`rgb(${r},${g},${b})`;
 })
 z.addEventListener("mouseleave",function(){
