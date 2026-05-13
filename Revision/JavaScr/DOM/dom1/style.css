@@ -1,0 +1,24 @@
+*{
+    padding:0;
+    margin:0;
+}
+#box{
+    height:200px;
+    width:200px;
+    border:2px solid black;
+    margin-left:5px;
+    text-align:center;
+}
+.upper{
+    display:flex;
+    margin:5px;
+    justify-content:center;
+    text-align:center;
+    
+}
+.lower{
+    display:flex;
+    margin:5px;
+    justify-content:center;
+    text-align:center;
+}
