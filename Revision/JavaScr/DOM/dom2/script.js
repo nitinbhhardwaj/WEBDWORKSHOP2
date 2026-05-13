@@ -15,8 +15,12 @@ y.addEventListener("mouseenter",function(){
         y.style.backgroundColor="green";
         clr="red";
     }
-    else{
+    else if(clr=="red"){
         y.style.backgroundColor="red";
+        clr="yellow";
+    }
+    else{
+        y.style.backgroundColor="yellow";
         clr="green";
     }
 })
@@ -25,13 +29,13 @@ y.addEventListener("mouseleave",function(){
 })
 let z=document.getElementById("box3");
 z.addEventListener("mousemove",function(){
-    let r=Math.random*255;
-    let g=Math.random*255;
-    let b=Math.random*255;
-    z.style.backgroundColor=rgb(255,255,255);
+    let r=Math.floor(Math.random*255);
+    let g=Math.floor(Math.random*255);
+    let b=Math.floor(Math.random*255);
+    z.style.backgroundColor=rgb(r,g,b);
 })
 z.addEventListener("mouseleave",function(){
-    z.style.backgroundColor=rgb(0,0,0);
+    z.style.backgroundColor=rgb(255,255,255);
 })
 let a=document.getElementById("box4");
 a.addEventListener("mousemove",function(){
