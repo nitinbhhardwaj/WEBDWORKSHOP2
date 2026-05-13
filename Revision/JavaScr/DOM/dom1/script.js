@@ -21,7 +21,7 @@ let y=document.getElementById("heading2");
 
 let z=document.getElementById("heading3");
 z.addEventListener("mouseenter",function(){
-    x.innerHTML="Pikachu";
+    x.innerHTML=Math.random();
     x.style.color="white";
     x.style.backgroundColor="red";
 })

@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+}
+.upper,.lower{
+    display:flex;
+    align-content:center;
+}
+.box{
+    border:3px solid black;
+    display:inline-block;
+    height:200px;
+    width:200px;
+    text-align:center;
+    align-content:center;
+    margin:4px;
+    font-weight:bold;
+}
