@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
 }
-.upper,.lower{
+.upper{
     display:flex;
     align-content:center;
 }
