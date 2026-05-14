@@ -3,6 +3,13 @@ x.addEventListener("mouseenter",function(){
     let r=Math.floor(Math.random()*100);
     x.innerText=`${r}`;
 })
+x.addEventListener("dblclick",function(){
+    let r=Math.floor(Math.random()*256);
+    let g=Math.floor(Math.random()*256);
+    let b=Math.floor(Math.random()*256);
+    x.style.backgroundColor=`rgb(${r},${g},${b})`;
+    x.style.color="white";
+})
 x.addEventListener("mouseleave",function(){
     x.innerText=1;
 })
@@ -35,7 +42,7 @@ z.addEventListener("mousemove",function(){
     z.style.backgroundColor=`rgb(${r},${g},${b})`;
 })
 z.addEventListener("mouseleave",function(){
-    z.style.backgroundColor=rgb(255,255,255);
+    z.style.backgroundColor="white";
 })
 let a=document.getElementById("box4");
 a.addEventListener("mousemove",function(){
@@ -50,4 +57,12 @@ a.addEventListener("mouseleave",function(){
     x.style.backgroundColor="white";
     y.style.backgroundColor="white";
     z.style.backgroundColor="white";
+})
+
+let main=document.querySelector(".main");
+let crsr=document.getElementById("cursor");
+main.addEventListener("mousemove",function(dets){
+    console.log(dets.x,dets.y);
+    crsr.style.left=dets.x+ "px";
+    crsr.style.top=dets.y+ "px";
 })

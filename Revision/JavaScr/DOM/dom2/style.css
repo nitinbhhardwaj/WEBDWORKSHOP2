@@ -16,3 +16,12 @@
     margin:4px;
     font-weight:bold;
 }
+#cursor{
+    height:20px;
+    width:20px;
+    background-image:url("https://i.pinimg.com/736x/a0/49/6b/a0496b6dae9a472b09d94fe175e6c8bd.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position:absolute;
+}
