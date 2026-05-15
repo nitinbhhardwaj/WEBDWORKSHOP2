@@ -14,7 +14,7 @@ istrue=true;
 console.log(typeof istrue);
 console.log("Javascript is a dynamically typed language");
 
-//Javascript is a csase sensitive language
+//Javascript is a case sensitive language
 fullname="Rahul";
 fullName="Mayank";
 console.log(fullname);
