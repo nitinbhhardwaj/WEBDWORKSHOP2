@@ -1,9 +1,9 @@
 import Cards from './Cards.jsx'
 
 function App() {
-    return {
+    return (
       <Cards/>
-    };
+    );
 }
 
 export default App
