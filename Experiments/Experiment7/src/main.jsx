@@ -1,12 +1,10 @@
-import React from 'react';
-import './Student.css';
-function Student(props) {
-return (
-<div className="student-card">
-<h2>{props.name}</h2>
-<p><span>Course:</span> {props.course}</p>
-<p><span>Marks:</span> {props.marks}</p>
-</div>
-);
-}
-export default Student;
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
