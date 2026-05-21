@@ -13,7 +13,7 @@ function Button(){
     const handleClick=(e)=>e.target.textContent="OUCH";
     return(
         // <button onClick={()=>handleClick("Bro")}>Click me </button>
-         <button onDoubleClick={(e)=>handleClick(e)} style={{cursor:"pointer"}}>Click me </button>
+         <button onClick={(e)=>handleClick(e)} style={{cursor:"pointer"}}>Click me </button>
     );
 }
 export default Button
