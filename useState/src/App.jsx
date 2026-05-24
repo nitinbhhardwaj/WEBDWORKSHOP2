@@ -3,13 +3,14 @@
 //             (useState,useEffect,useContext,useReducer,useCallback, and more...)
 
 // import MyComponent from "./MyComponent.jsx"
-import Counter from "./Counter.jsx"
+// import Counter from "./Counter.jsx"
+import Component from './Component.jsx'
 function App() {
   return (
     <>
     {/* <MyComponent/> */}
-    <Counter></Counter>
-
+    {/* <Counter></Counter> */}
+    <Component/>
     </>
     
   );
