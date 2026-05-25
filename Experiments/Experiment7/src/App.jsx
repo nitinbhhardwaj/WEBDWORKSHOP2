@@ -1,15 +1,47 @@
-import Student from './Student.jsx'
+import Student from './Student.jsx';
+
 function App() {
-  return(
-  <>
-  <div style={{border:"2px solid black",backgroundColor:"grey",margin:"15px auto",display:"flex",flexDirection:"column",alignItems:"center"}}>     
-  <div><h1 style={{textAlign:"center"}}>Student Details </h1></div>
-  <Student name="Nitin Bhardwaj" course="Computer Science" marks="100"></Student>
-  <Student name="Ojasya Pandey" course="Computer Science" marks="91"></Student>
-  <Student name="Aman Tiwari" course="Computer Science" marks="88"></Student>
-  </div>
-  </>
+  return (
+    <>
+      <div
+        style={{
+          border: "2px solid black",
+          backgroundColor: "#e5e5e5",
+          width: "500px",
+          margin: "20px auto",
+          padding: "20px",
+        }}
+      >
+        <h1
+          style={{
+            paddingLeft: "20px",
+            fontSize: "40px",
+            fontWeight: "bold",
+          }}
+        >
+          Student Information
+        </h1>
+
+        <Student
+          name="Nitin Bhardwaj"
+          course="Computer Science"
+          marks="100"
+        />
+
+        <Student
+          name="Niyatee Agrawal"
+          course="Information Technology"
+          marks="92"
+        />
+
+        <Student
+          name="Ojesev Gupta"
+          course="Electronics"
+          marks="78"
+        />
+      </div>
+    </>
   );
 }
 
-export default App
+export default App;

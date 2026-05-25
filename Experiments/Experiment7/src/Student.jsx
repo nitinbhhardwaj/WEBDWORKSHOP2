@@ -1,15 +1,35 @@
+function Student(props) {
+  return (
+    <div
+      style={{
+        backgroundColor: "white",
+        width: "320px",
+        margin: "20px auto",
+        padding: "30px",
+        borderRadius: "15px",
+        boxShadow: "0px 3px 10px rgba(0,0,0,0.3)",
+        textAlign: "center",
+      }}
+    >
+      <h2
+        style={{
+          color: "#1565c0",
+          fontSize: "28px",
+          marginBottom: "20px",
+        }}
+      >
+        {props.name}
+      </h2>
 
-function Student(props){
-    return(
-        <div>
-            <div style={{backgroundColor:"white",padding:"100px",height:"200px",width:"400px",marginBottom:"80px",borderRadius:"15px",boxShadow:"5px 8px 15px black",textAlign:"center"}}>
-                <h2 style={{color:"blue"}}>
-                    Name:{props.name}
-                </h2>
-                <p>Course:{props.course}</p>
-                <p>Marks:{props.marks}</p>
-            </div>
-            </div>
-    );
+      <p style={{ fontSize: "20px" }}>
+        <strong>Course:</strong> {props.course}
+      </p>
+
+      <p style={{ fontSize: "20px" }}>
+        Marks: {props.marks}
+      </p>
+    </div>
+  );
 }
-export default Student
+
+export default Student;
