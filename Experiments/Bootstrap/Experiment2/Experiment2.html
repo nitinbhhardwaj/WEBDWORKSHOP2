@@ -1,176 +1,220 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Experiment 02</title>
-<link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-rel="stylesheet"
-integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-crossorigin="anonymous">
-<style>
-.card img {
-height: 200px;
-object-fit: cover;
-}
-.card {
-border-radius: 12px;
-box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-transition: transform 0.2s, box-shadow 0.2s;
-}
-.card:hover {
-transform: translateY(-5px);
-box-shadow: 0 10px 24px rgba(0,0,0,0.15);
-}
-</style>
+    <title>TechStore</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+
+        .card {
+            transition: 0.3s;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            background: white;
+            padding: 10px;
+        }
+
+        footer {
+            margin-top: 50px;
+        }
+    </style>
 </head>
-<body class="bg-light">
-<div class="container my-3">
-<!-- Navbar Row -->
-<div class="row rounded-3 overflow-hidden mb-3">
-<div class="col-lg-12 text-bg-dark">
-<ul class="nav justify-content-end">
-<li class="nav-item"><a class="nav-link active"
-href="#">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Contact
-Us</a></li>
-</ul>
-</div>
-</div>
-<!-- Cards Row -->
-<div class="row my-2 gy-3">
-<div class="col-12 col-md-6 col-lg-4">
-<div class="card h-100 border-0">
-<img src="images/laptop.jpg" class="card-img-top rounded-top-3"
-alt="laptop">
-<div class="card-body">
-<span class="badge bg-success mb-2">New</span>
-<h5 class="card-title fw-bold">Pro Laptop</h5>
-<p class="card-text text-muted" style="font-size: 14px;">High
-performance laptop with 16GB RAM and 512GB SSD storage.</p>
-<p class="fw-bold text-primary mb-3">₹75,999</p>
-<a href="#" class="btn btn-primary w-100"
-data-bs-toggle="modal" data-bs-target="#modal1">View Details</a>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6 col-lg-4">
-<div class="card h-100 border-0">
-<img src="images/phone.jpeg" class="card-img-top rounded-top-3"
-alt="phone">
-<div class="card-body">
-<span class="badge bg-danger mb-2">Sale</span>
-<h5 class="card-title fw-bold">Smartphone X</h5>
-<p class="card-text text-muted" style="font-size: 14px;">Latest
-smartphone with 108MP camera and 5000mAh battery.</p>
-<p class="fw-bold text-primary mb-3">₹29,999</p>
-<a href="#" class="btn btn-primary w-100"
-data-bs-toggle="modal" data-bs-target="#modal2">View Details</a>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6 col-lg-4">
-<div class="card h-100 border-0">
-<img src="images/tablet.png" class="card-img-top rounded-top-3"
-alt="tablet">
-<div class="card-body">
-<span class="badge bg-warning text-dark mb-2">Popular</span>
-<h5 class="card-title fw-bold">Smart Tablet</h5>
-<p class="card-text text-muted" style="font-size:
-14px;">Powerful tablet with 10" display and all-day battery life.</p>
-<p class="fw-bold text-primary mb-3">₹45,999</p>
-<a href="#" class="btn btn-primary w-100"
-data-bs-toggle="modal" data-bs-target="#modal3">View Details</a>
-</div>
-</div>
-</div>
-</div>
-<!-- Footer Row -->
-<div class="row text-bg-dark text-center align-items-center rounded-3 mt-3"
-style="height: 80px;">
-<div class="col-lg-12">
-<p class="mb-0">&copy; 2025 TechStore. All Rights Reserved.</p>
-</div>
-</div>
-</div>
-<!-- Modal 1 -->
-<div class="modal fade" id="modal1" tabindex="-1">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header bg-dark text-white">
-<h5 class="modal-title">Pro Laptop</h5>
-<button type="button" class="btn-close btn-close-white"
-data-bs-dismiss="modal"></button>
-</div>
-<div class="modal-body">
-<p><strong>RAM:</strong> 16GB DDR5</p>
-<p><strong>Storage:</strong> 512GB NVMe SSD</p>
-<p><strong>Display:</strong> 15.6" Full HD IPS</p>
-<p><strong>Processor:</strong> Intel Core i7 13th Gen</p>
-<p><strong>Price:</strong> ₹75,999</p>
-<span class="badge bg-success">New Arrival</span>
-</div>
-<div class="modal-footer">
-<button type="button" class="btn btn-secondary"
-data-bs-dismiss="modal">Close</button>
-</div>
-</div>
-</div>
-</div>
-<!-- Modal 2 -->
-<div class="modal fade" id="modal2" tabindex="-1">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header bg-dark text-white">
-<h5 class="modal-title">Smartphone X</h5>
-<button type="button" class="btn-close btn-close-white"
-data-bs-dismiss="modal"></button>
-</div>
-<div class="modal-body">
-<p><strong>Camera:</strong> 108MP Triple Camera</p>
-<p><strong>Battery:</strong> 5000mAh Fast Charge</p>
-<p><strong>Display:</strong> 6.7" AMOLED 120Hz</p>
-<p><strong>Processor:</strong> Snapdragon 8 Gen 2</p>
-<p><strong>Price:</strong> ₹29,999</p>
-<span class="badge bg-danger">On Sale</span>
-</div>
-<div class="modal-footer">
-<button type="button" class="btn btn-secondary"
-data-bs-dismiss="modal">Close</button>
-</div>
-</div>
-</div>
-</div>
-<!-- Modal 3 -->
-<div class="modal fade" id="modal3" tabindex="-1">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header bg-dark text-white">
-<h5 class="modal-title">Smart Tablet</h5>
-<button type="button" class="btn-close btn-close-white"
-data-bs-dismiss="modal"></button>
-</div>
-<div class="modal-body">
-<p><strong>Display:</strong> 10" Full HD IPS</p>
-<p><strong>Battery:</strong> 8000mAh All-Day</p>
-<p><strong>Storage:</strong> 128GB + Expandable</p>
-<p><strong>OS:</strong> Android 14</p>
-<p><strong>Price:</strong> ₹45,999</p>
-<span class="badge bg-warning text-dark">Popular</span>
-</div>
-<div class="modal-footer">
-<button type="button" class="btn btn-secondary"
-data-bs-dismiss="modal">Close</button>
-</div>
-</div>
-</div>
-</div>
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-crossorigin="anonymous"></script>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">TechStore</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/1712/1712/xif0q/computer/m/3/7/-original-imahayjpgztvrfyj.jpeg?q=90"
+                    class="card-img-top" alt="Laptop">
+
+                    <div class="card-body">
+                        <h5>Laptop</h5>
+                        <p>High performance laptop</p>
+
+                        <h6>
+                            ₹50,000
+                            <span class="badge bg-success">New</span>
+                        </h6>
+
+                        <button class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#m1">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/s/t/g/-original-imahft5gqkxzyeqa.jpeg?q=70"
+                    class="card-img-top" alt="Mobile">
+
+                    <div class="card-body">
+                        <h5>Mobile</h5>
+                        <p>Latest smartphone</p>
+
+                        <h6>
+                            ₹30,000
+                            <span class="badge bg-danger">Sale</span>
+                        </h6>
+
+                        <button class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#m2">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTndMcJW71HLgi9ntgoterJiJJjLxbtOVVpyA&s"
+                    class="card-img-top" alt="Headphones">
+
+                    <div class="card-body">
+                        <h5>Headphones</h5>
+                        <p>Noise cancelling</p>
+
+                        <h6>
+                            ₹5,000
+                            <span class="badge bg-success">New</span>
+                        </h6>
+
+                        <button class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#m3">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="m1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5>Laptop Details</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    16GB RAM, SSD, Fast performance
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="m2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5>Mobile Details</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    High camera quality smartphone
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="m3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5>Headphones Details</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    Best sound quality with bass
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>© 2026 TechStore | Follow us on social media</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
