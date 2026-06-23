@@ -1,0 +1,17 @@
+body{
+    margin:0;
+    padding:0;
+}
+h1{
+    background-color: black;
+    color:white;
+}
+#box{
+    border:2px solid grey;
+    background-color:black;
+    color:white;
+}
+#head{
+    display:block;
+    text-align:center;
+}
